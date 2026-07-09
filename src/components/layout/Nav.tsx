@@ -1,0 +1,94 @@
+"use client"
+
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
+import Link from "next/link"
+
+const LINKS = [
+  { label: "Servicios", href: "/servicios" },
+  { label: "Recursos", href: "/recursos" },
+  { label: "Sobre Nosotros", href: "/nosotros" },
+  { label: "Contacto", href: "/contacto" },
+]
+
+export function Nav() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <nav className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-primary/10">
+      <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <Link href="/" className="text-lg font-bold text-primary tracking-tight">
+          Tu Asesor<span className="text-secondary">Migratorio</span>
+        </Link>
+
+        {/* Desktop */}
+        <div className="hidden md:flex items-center gap-8">
+          {LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm text-charcoal/70 hover:text-primary transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="flex items-center gap-3 ml-4">
+            <Link
+              href="/auth/login"
+              className="text-sm text-charcoal/50 hover:text-charcoal transition-colors"
+            >
+              Iniciar Sesión
+            </Link>
+            <Link
+              href="/auth/signup"
+              className="text-sm px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
+            >
+              Comenzar
+            </Link>
+          </div>
+        </div>
+
+        {/* Mobile */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden p-2 text-charcoal"
+          aria-label="Menú"
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="md:hidden border-t border-primary/10 bg-cream px-5 py-4 space-y-3">
+          {LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="block text-sm text-charcoal/70 hover:text-primary transition-colors py-1"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="flex gap-3 pt-3 border-t border-primary/10">
+            <Link
+              href="/auth/login"
+              onClick={() => setOpen(false)}
+              className="flex-1 text-center text-sm py-2 rounded-lg border border-primary/20 text-primary hover:bg-primary/5 transition-colors"
+            >
+              Iniciar Sesión
+            </Link>
+            <Link
+              href="/auth/signup"
+              onClick={() => setOpen(false)}
+              className="flex-1 text-center text-sm py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
+            >
+              Comenzar
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  )
+}
