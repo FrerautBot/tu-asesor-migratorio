@@ -7,8 +7,8 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Hablar por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-success text-white flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform animate-pulse"
-      style={{ animationDuration: "3s" }}
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-14 h-14 rounded-full bg-success text-white flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform"
+      
     >
       <svg
         viewBox="0 0 24 24"
