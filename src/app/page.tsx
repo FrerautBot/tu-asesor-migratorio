@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <Hero />
       {/* Placeholder for remaining landing sections — Fase 2 */}
-      <section className="max-w-6xl mx-auto px-5 py-20 text-center text-charcoal/40">
-        <p className="text-sm">Servicios &bull; Testimonios &bull; FAQ &mdash; próximamente</p>
+      <section className="max-w-6xl mx-auto px-5 py-16 sm:py-20 text-center text-charcoal/40">
+        <p className="text-xs sm:text-sm">Servicios &bull; Testimonios &bull; FAQ &mdash; próximamente</p>
       </section>
     </>
   )

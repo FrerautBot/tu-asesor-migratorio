@@ -2,8 +2,8 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-primary-dark text-smoke/70 py-12 mt-20">
-      <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <footer className="bg-primary-dark text-smoke/70 py-10 sm:py-12 mt-20">
+      <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
         <div>
           <p className="text-white font-bold text-lg mb-2">
             Tu Asesor<span className="text-secondary">Migratorio</span>
@@ -16,11 +16,11 @@ export function Footer() {
 
         <div>
           <p className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Enlaces</p>
-          <div className="space-y-2 text-sm">
-            <Link href="/servicios" className="block hover:text-white transition-colors">Servicios</Link>
-            <Link href="/nosotros" className="block hover:text-white transition-colors">Sobre Nosotros</Link>
-            <Link href="/recursos" className="block hover:text-white transition-colors">Recursos</Link>
-            <Link href="/contacto" className="block hover:text-white transition-colors">Contacto</Link>
+          <div className="space-y-1 text-sm">
+            <Link href="/servicios" className="block py-2 hover:text-white transition-colors">Servicios</Link>
+            <Link href="/nosotros" className="block py-2 hover:text-white transition-colors">Sobre Nosotros</Link>
+            <Link href="/recursos" className="block py-2 hover:text-white transition-colors">Recursos</Link>
+            <Link href="/contacto" className="block py-2 hover:text-white transition-colors">Contacto</Link>
           </div>
         </div>
 

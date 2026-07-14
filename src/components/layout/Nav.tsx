@@ -16,13 +16,13 @@ export function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-primary/10">
-      <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold text-primary tracking-tight">
+      <div className="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
+        <Link href="/" className="text-base sm:text-lg font-bold text-primary tracking-tight shrink-0">
           Tu Asesor<span className="text-secondary">Migratorio</span>
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {LINKS.map((link) => (
             <Link
               key={link.href}
@@ -32,7 +32,7 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <div className="flex items-center gap-3 ml-4">
+          <div className="flex items-center gap-3 ml-2">
             <Link
               href="/auth/login"
               className="text-sm text-charcoal/50 hover:text-charcoal transition-colors"
@@ -48,11 +48,11 @@ export function Nav() {
           </div>
         </div>
 
-        {/* Mobile */}
+        {/* Mobile hamburger — 44×44px touch target */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-charcoal"
-          aria-label="Menú"
+          className="md:hidden h-11 w-11 flex items-center justify-center text-charcoal -mr-1"
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -60,29 +60,29 @@ export function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-primary/10 bg-cream px-5 py-4 space-y-3">
+        <div className="md:hidden border-t border-primary/10 bg-cream px-5 py-4 space-y-1">
           {LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block text-sm text-charcoal/70 hover:text-primary transition-colors py-1"
+              className="block text-sm text-charcoal/70 hover:text-primary transition-colors py-3"
             >
               {link.label}
             </Link>
           ))}
-          <div className="flex gap-3 pt-3 border-t border-primary/10">
+          <div className="flex gap-3 pt-4 border-t border-primary/10">
             <Link
               href="/auth/login"
               onClick={() => setOpen(false)}
-              className="flex-1 text-center text-sm py-2 rounded-lg border border-primary/20 text-primary hover:bg-primary/5 transition-colors"
+              className="flex-1 text-center text-sm py-3 rounded-lg border border-primary/20 text-primary hover:bg-primary/5 transition-colors"
             >
               Iniciar Sesión
             </Link>
             <Link
               href="/auth/signup"
               onClick={() => setOpen(false)}
-              className="flex-1 text-center text-sm py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
+              className="flex-1 text-center text-sm py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors"
             >
               Comenzar
             </Link>
