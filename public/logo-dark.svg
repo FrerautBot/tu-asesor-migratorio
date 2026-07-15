@@ -1,21 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 52" fill="none">
-  <!-- Symbol: Guide Star compass for dark backgrounds — north arrow emphasized -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 56" fill="none">
+  <!-- Symbol — dark bg version -->
   <g transform="translate(4, 2)">
-    <circle cx="24" cy="24" r="20" stroke="#FAF7F2" stroke-width="2" fill="none" />
-    <rect x="22" y="11" width="4" height="12" fill="#C17A4E" rx="1" />
-    <polygon points="17,11 24,2 31,11" fill="#C17A4E" />
-    <text x="24" y="17" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="6" font-weight="700" fill="#FAF7F2">N</text>
-    <line x1="26" y1="24" x2="44" y2="24" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
-    <circle cx="44" cy="24" r="2.5" fill="#FAF7F2" />
-    <line x1="22" y1="24" x2="4"  y2="24" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
-    <circle cx="4"  cy="24" r="2.5" fill="#FAF7F2" />
-    <line x1="24" y1="26" x2="24" y2="43" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
-    <circle cx="24" cy="43" r="2.5" fill="#FAF7F2" />
-    <circle cx="24" cy="24" r="3" fill="#C17A4E" />
+    <circle cx="24" cy="28" r="20" stroke="#FAF7F2" stroke-width="3" fill="none" />
+    <rect x="22" y="13" width="4" height="14" fill="#C17A4E" rx="1" />
+    <polygon points="17,13 24,0 31,13" fill="#C17A4E" />
+    <text x="24" y="4" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="7" font-weight="700" fill="#FAF7F2">N</text>
+    <line x1="26" y1="28" x2="44" y2="28" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
+    <circle cx="44" cy="28" r="2.5" fill="#FAF7F2" />
+    <line x1="22" y1="28" x2="4"  y2="28" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
+    <circle cx="4"  cy="28" r="2.5" fill="#FAF7F2" />
+    <line x1="24" y1="30" x2="24" y2="47" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
+    <circle cx="24" cy="47" r="2.5" fill="#FAF7F2" />
+    <circle cx="24" cy="28" r="3" fill="#C17A4E" />
   </g>
+
   <!-- Wordmark — cream on dark -->
   <g font-family="Geist, system-ui, -apple-system, sans-serif">
-    <text x="56" y="22" font-size="14" font-weight="400" fill="#FAF7F2">Tu Asesor</text>
-    <text x="56" y="40" font-size="16" font-weight="700" fill="#FAF7F2">Migratorio</text>
+    <text x="56" y="20" font-size="12" font-weight="300" fill="#FAF7F2">Tu Asesor</text>
+    <text x="56" y="44" font-size="20" font-weight="800" fill="#FAF7F2">Migratorio</text>
   </g>
 </svg>

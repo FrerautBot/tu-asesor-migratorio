@@ -1,24 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <!-- Favicon 32x32 — north arrow -->
-  <circle cx="16" cy="16" r="14" stroke="#0F2440" stroke-width="2" fill="none" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 36" fill="none">
+  <!-- Favicon — circle 2.5px, arrow breaks through, N outside -->
+  <circle cx="16" cy="20" r="14" stroke="#0F2440" stroke-width="2.5" fill="none" />
 
-  <!-- North arrow (terracotta) -->
-  <rect x="14.5" y="7" width="3" height="9" fill="#C17A4E" rx="0.5" />
-  <polygon points="10.5,7 16,1 21.5,7" fill="#C17A4E" />
-  <text x="16" y="12" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="4.5" font-weight="700" fill="#0F2440">N</text>
+  <!-- North arrow (terracotta) — breaks above circle -->
+  <rect x="14.5" y="9" width="3" height="10" fill="#C17A4E" rx="0.5" />
+  <polygon points="10.5,9 16,0 21.5,9" fill="#C17A4E" />
+
+  <!-- N above tip -->
+  <text x="16" y="3.5" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="5" font-weight="700" fill="#0F2440">N</text>
 
   <!-- East -->
-  <line x1="18" y1="16" x2="29" y2="16" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="29" cy="16" r="2" fill="#0F2440" />
+  <line x1="18" y1="20" x2="29" y2="20" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="29" cy="20" r="2" fill="#0F2440" />
 
   <!-- West -->
-  <line x1="14" y1="16" x2="3"  y2="16" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="3"  cy="16" r="2" fill="#0F2440" />
+  <line x1="14" y1="20" x2="3"  y2="20" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="3"  cy="20" r="2" fill="#0F2440" />
 
   <!-- South -->
-  <line x1="16" y1="18" x2="16" y2="29" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="16" cy="29" r="2" fill="#0F2440" />
+  <line x1="16" y1="22" x2="16" y2="33" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="16" cy="33" r="2" fill="#0F2440" />
 
   <!-- Center -->
-  <circle cx="16" cy="16" r="2" fill="#C17A4E" />
+  <circle cx="16" cy="20" r="2" fill="#C17A4E" />
 </svg>
