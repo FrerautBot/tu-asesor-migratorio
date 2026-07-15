@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 54" fill="none">
-  <!-- Guide Star — circle (3px), arrow breaks through top, N outside -->
-  <circle cx="24" cy="28" r="20" stroke="#0F2440" stroke-width="3" fill="none" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 66" fill="none">
+  <!-- Guide Star — 8px top padding, 6.5px bottom padding -->
+  <circle cx="24" cy="36" r="20" stroke="#0F2440" stroke-width="3" fill="none" />
 
   <!-- North arrow (terracotta) — breaks 6.5px above circle -->
-  <rect x="22" y="13" width="4" height="14" fill="#C17A4E" rx="1" />
-  <polygon points="17,13 24,0 31,13" fill="#C17A4E" />
+  <rect x="21" y="21" width="6" height="14" fill="#C17A4E" rx="1.5" />
+  <polygon points="15,21 24,8 33,21" fill="#C17A4E" />
 
-  <!-- N above arrow tip, outside circle -->
-  <text x="24" y="4" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="7" font-weight="700" fill="#0F2440">N</text>
+  <!-- N above arrow tip — 4px gap -->
+  <text x="24" y="3.5" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="8" font-weight="700" fill="#0F2440">N</text>
 
   <!-- East -->
-  <line x1="26" y1="28" x2="44" y2="28" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="44" cy="28" r="2.5" fill="#0F2440" />
+  <line x1="27" y1="36" x2="44" y2="36" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="44" cy="36" r="2.5" fill="#0F2440" />
 
   <!-- West -->
-  <line x1="22" y1="28" x2="4"  y2="28" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="4"  cy="28" r="2.5" fill="#0F2440" />
+  <line x1="21" y1="36" x2="4"  y2="36" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="4"  cy="36" r="2.5" fill="#0F2440" />
 
   <!-- South -->
-  <line x1="24" y1="30" x2="24" y2="47" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="24" cy="47" r="2.5" fill="#0F2440" />
+  <line x1="24" y1="38" x2="24" y2="57" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="24" cy="57" r="2.5" fill="#0F2440" />
 
   <!-- Center -->
-  <circle cx="24" cy="28" r="3" fill="#C17A4E" />
+  <circle cx="24" cy="36" r="3" fill="#C17A4E" />
 </svg>
