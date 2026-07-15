@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Guide Star / Compass Rose — south point emphasized for Chile -->
+  <circle cx="24" cy="24" r="20" stroke="#0F2440" stroke-width="2" fill="none" />
+  <!-- North (thin navy) -->
+  <line x1="24" y1="22" x2="24" y2="4"  stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="24" cy="4" r="2.5" fill="#0F2440" />
+  <!-- East (thin navy) -->
+  <line x1="26" y1="24" x2="44" y2="24" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="44" cy="24" r="2.5" fill="#0F2440" />
+  <!-- West (thin navy) -->
+  <line x1="22" y1="24" x2="4"  y2="24" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
+  <circle cx="4"  cy="24" r="2.5" fill="#0F2440" />
+  <!-- South (emphasized terracotta) — the guiding direction -->
+  <line x1="24" y1="26" x2="24" y2="42" stroke="#C17A4E" stroke-width="3" stroke-linecap="round" />
+  <circle cx="24" cy="44" r="3.5" fill="#C17A4E" />
+  <!-- Center dot — arrival point -->
+  <circle cx="24" cy="24" r="3" fill="#C17A4E" />
+</svg>

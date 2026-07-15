@@ -17,8 +17,12 @@ export function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-primary/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
-        <Link href="/" className="text-base sm:text-lg font-bold text-primary tracking-tight shrink-0">
-          Tu Asesor<span className="text-secondary">Migratorio</span>
+        <Link href="/" className="shrink-0" aria-label="Tu Asesor Migratorio — Inicio">
+          <img
+            src="/logo.svg"
+            alt="Tu Asesor Migratorio"
+            className="h-9 sm:h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop */}
@@ -48,7 +52,7 @@ export function Nav() {
           </div>
         </div>
 
-        {/* Mobile hamburger — 44×44px touch target */}
+        {/* Mobile hamburger — 44px touch target */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden h-11 w-11 flex items-center justify-center text-charcoal -mr-1"
