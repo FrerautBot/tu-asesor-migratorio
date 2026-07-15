@@ -1,15 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 52" fill="none">
-  <!-- Symbol: Guide Star compass for dark backgrounds -->
+  <!-- Symbol: Guide Star compass for dark backgrounds — north emphasized -->
   <g transform="translate(4, 2)">
     <circle cx="24" cy="24" r="20" stroke="#FAF7F2" stroke-width="2" fill="none" />
-    <line x1="24" y1="22" x2="24" y2="4"  stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
-    <circle cx="24" cy="4" r="2.5" fill="#FAF7F2" />
+    <line x1="24" y1="22" x2="24" y2="3"  stroke="#C17A4E" stroke-width="3" stroke-linecap="round" />
+    <circle cx="24" cy="3" r="3.5" fill="#C17A4E" />
+    <text x="23" y="9" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="7" font-weight="700" fill="#FAF7F2">N</text>
     <line x1="26" y1="24" x2="44" y2="24" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
     <circle cx="44" cy="24" r="2.5" fill="#FAF7F2" />
     <line x1="22" y1="24" x2="4"  y2="24" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
     <circle cx="4"  cy="24" r="2.5" fill="#FAF7F2" />
-    <line x1="24" y1="26" x2="24" y2="42" stroke="#C17A4E" stroke-width="3" stroke-linecap="round" />
-    <circle cx="24" cy="44" r="3.5" fill="#C17A4E" />
+    <line x1="24" y1="26" x2="24" y2="43" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" />
+    <circle cx="24" cy="43" r="2.5" fill="#FAF7F2" />
     <circle cx="24" cy="24" r="3" fill="#C17A4E" />
   </g>
   <!-- Wordmark — cream on dark -->
