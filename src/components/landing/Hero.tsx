@@ -92,15 +92,6 @@ export function Hero() {
         ))}
       </div>
 
-      {/* --- GRID SUTIL (diagonal lines) --- */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(45deg, transparent, transparent 40px, #FAF7F2 40px, #FAF7F2 41px)",
-        }}
-      />
-
       {/* --- CONTENIDO PRINCIPAL --- */}
       <motion.div
         style={{ y: yContent, opacity: opacityContent }}
