@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing/Hero"
+import { Qualifier } from "@/components/landing/Qualifier"
 import { Equipo } from "@/components/landing/Equipo"
 import { Servicios } from "@/components/landing/Servicios"
 import { ComoFunciona } from "@/components/landing/ComoFunciona"
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Qualifier />
       <Equipo />
       <Servicios />
       <ComoFunciona />
