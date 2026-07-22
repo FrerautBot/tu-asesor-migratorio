@@ -47,7 +47,7 @@ export function CtaFinal() {
 
             <a
               href="mailto:contacto@tuasesormigratorio.cl"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-xl border border-white/15 bg-white/[0.03] backdrop-blur-sm text-white font-semibold hover:bg-white/[0.08] hover:border-white/25 transition-all duration-300 text-center min-h-[44px] text-sm sm:text-base"
+              className="glass-btn inline-flex items-center justify-center px-8 py-4 text-white font-semibold text-center min-h-[44px] text-sm sm:text-base"
             >
               contacto@tuasesormigratorio.cl
             </a>
@@ -70,7 +70,7 @@ export function CtaFinal() {
                 type="text"
                 required
                 placeholder="Dr. / Ing. / Su nombre completo"
-                className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-sm text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-secondary/40 focus:ring-2 focus:ring-secondary/10 transition-all duration-300"
+                className="glass-input w-full px-4 py-3 text-sm text-white placeholder:text-white/25 focus:outline-none"
               />
             </div>
             <div>
@@ -82,7 +82,7 @@ export function CtaFinal() {
                 type="email"
                 required
                 placeholder="su@correo.com"
-                className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-sm text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-secondary/40 focus:ring-2 focus:ring-secondary/10 transition-all duration-300"
+                className="glass-input w-full px-4 py-3 text-sm text-white placeholder:text-white/25 focus:outline-none"
               />
             </div>
             <div>
@@ -93,7 +93,7 @@ export function CtaFinal() {
                 id="telefono"
                 type="tel"
                 placeholder="+56 9 3252 5267"
-                className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-sm text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-secondary/40 focus:ring-2 focus:ring-secondary/10 transition-all duration-300"
+                className="glass-input w-full px-4 py-3 text-sm text-white placeholder:text-white/25 focus:outline-none"
               />
             </div>
             <div>
@@ -105,7 +105,7 @@ export function CtaFinal() {
                 required
                 rows={4}
                 placeholder="Profesión, etapa del proceso migratorio, qué necesita resolver..."
-                className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-sm text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-secondary/40 focus:ring-2 focus:ring-secondary/10 transition-all duration-300 resize-y"
+                className="glass-input w-full px-4 py-3 text-sm text-white placeholder:text-white/25 focus:outline-none resize-y"
               />
             </div>
             <button

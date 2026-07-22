@@ -92,7 +92,7 @@ export function Qualifier() {
                 <button
                   key={p.id}
                   onClick={() => { setProfesion(p.id); avanzar() }}
-                  className="group flex items-center gap-4 px-5 py-4 rounded-xl border border-primary/10 bg-white hover:border-secondary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 text-left min-h-[44px]"
+                  className="glass-card glass-lift group flex items-center gap-4 px-5 py-4 text-left min-h-[44px] cursor-pointer"
                 >
                   <div className="h-10 w-10 rounded-lg bg-primary/5 flex items-center justify-center shrink-0 group-hover:bg-secondary/10 transition-colors">
                     <p.icon className="h-5 w-5 text-primary group-hover:text-secondary transition-colors" />
@@ -120,7 +120,7 @@ export function Qualifier() {
                 <button
                   key={n.id}
                   onClick={() => { setNecesidad(n.id); avanzar() }}
-                  className="w-full flex items-center gap-4 px-5 py-4 rounded-xl border border-primary/10 bg-white hover:border-secondary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 text-left min-h-[44px] group"
+                  className="w-full glass-card glass-lift flex items-center gap-4 px-5 py-4 text-left min-h-[44px] cursor-pointer group"
                 >
                   <div className="h-5 w-5 rounded-full border-2 border-primary/20 flex items-center justify-center shrink-0 group-hover:border-secondary group-hover:bg-secondary/10 transition-colors">
                     <ArrowRight className="h-3 w-3 text-primary/30 group-hover:text-secondary transition-colors" />
@@ -148,7 +148,7 @@ export function Qualifier() {
                 <button
                   key={e.id}
                   onClick={() => { setEtapa(e.id); avanzar() }}
-                  className="group flex items-center gap-3 px-5 py-4 rounded-xl border border-primary/10 bg-white hover:border-secondary/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 text-left min-h-[44px]"
+                  className="w-full glass-card glass-lift flex items-center gap-3 px-5 py-4 text-left min-h-[44px] cursor-pointer group"
                 >
                   <span className="text-sm font-medium text-primary-dark">{e.label}</span>
                 </button>

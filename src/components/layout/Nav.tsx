@@ -15,7 +15,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-primary/10">
+    <nav className="sticky top-0 z-50 glass-nav">
       <div className="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
         <Link href="/" className="shrink-0" aria-label="Tu Asesor Migratorio — Inicio">
           <img
