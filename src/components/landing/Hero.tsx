@@ -36,7 +36,7 @@ export function Hero() {
               Hablemos por WhatsApp
             </Link>
             <Link
-              href="/servicios"
+              href="#servicios"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center min-h-[44px]"
             >
               Ver servicios

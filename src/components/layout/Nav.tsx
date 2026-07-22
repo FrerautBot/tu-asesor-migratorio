@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react"
 import Link from "next/link"
 
 const LINKS = [
-  { label: "Servicios", href: "/servicios" },
-  { label: "Recursos", href: "/recursos" },
-  { label: "Sobre Nosotros", href: "/nosotros" },
-  { label: "Contacto", href: "/contacto" },
+  { label: "Equipo", href: "#equipo" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contacto", href: "#contacto" },
 ]
 
 export function Nav() {

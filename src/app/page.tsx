@@ -1,13 +1,21 @@
 import { Hero } from "@/components/landing/Hero"
+import { Equipo } from "@/components/landing/Equipo"
+import { Servicios } from "@/components/landing/Servicios"
+import { ComoFunciona } from "@/components/landing/ComoFunciona"
+import { Testimonios } from "@/components/landing/Testimonios"
+import { Faq } from "@/components/landing/Faq"
+import { CtaFinal } from "@/components/landing/CtaFinal"
 
 export default function Home() {
   return (
     <>
       <Hero />
-      {/* Placeholder for remaining landing sections — Fase 2 */}
-      <section className="max-w-6xl mx-auto px-5 py-16 sm:py-20 text-center text-charcoal/40">
-        <p className="text-xs sm:text-sm">Servicios &bull; Testimonios &bull; FAQ &mdash; próximamente</p>
-      </section>
+      <Equipo />
+      <Servicios />
+      <ComoFunciona />
+      <Testimonios />
+      <Faq />
+      <CtaFinal />
     </>
   )
 }
