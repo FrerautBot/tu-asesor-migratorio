@@ -1,26 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" fill="none">
-  <!-- Favicon — 5px top padding -->
-  <circle cx="16" cy="24" r="14" stroke="#0F2440" stroke-width="2.5" fill="none" />
-
-  <!-- North arrow (terracotta) — breaks above circle -->
-  <rect x="13" y="14" width="6" height="9" fill="#C17A4E" rx="1" />
-  <polygon points="9,14 16,5 23,14" fill="#C17A4E" />
-
-  <!-- N above tip — 3px gap -->
-  <text x="16" y="2" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="5.5" font-weight="700" fill="#0F2440">N</text>
-
-  <!-- East -->
-  <line x1="18" y1="24" x2="29" y2="24" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="29" cy="24" r="2" fill="#0F2440" />
-
-  <!-- West -->
-  <line x1="14" y1="24" x2="3"  y2="24" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="3"  cy="24" r="2" fill="#0F2440" />
-
-  <!-- South -->
-  <line x1="16" y1="26" x2="16" y2="38" stroke="#0F2440" stroke-width="2" stroke-linecap="round" />
-  <circle cx="16" cy="38" r="2" fill="#0F2440" />
-
-  <!-- Center -->
-  <circle cx="16" cy="24" r="2" fill="#C17A4E" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  {/* Fondo: círculo azul noche sólido */}
+  <circle cx="16" cy="16" r="15" fill="#0F2440" />
+  {/* Borde sutil */}
+  <circle cx="16" cy="16" r="14" stroke="#1B3A5C" stroke-width="1.5" fill="none" />
+  {/* Flecha Norte (terracota) — asta gruesa */}
+  <rect x="13" y="8" width="6" height="11" fill="#C17A4E" rx="1.5" />
+  {/* Punta triangular */}
+  <polygon points="7,13 16,3 25,13" fill="#C17A4E" />
+  {/* N centrada abajo */}
+  <text x="16" y="29" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="9" font-weight="800" fill="#C17A4E">N</text>
 </svg>
