@@ -2,14 +2,17 @@
 
 import { useState } from "react"
 import { motion } from "motion/react"
-import { Briefcase, GraduationCap, Stethoscope, Building2, Cpu, ArrowRight, Check } from "lucide-react"
+import { Briefcase, GraduationCap, Stethoscope, Building2, Cpu, Sprout, Utensils, User, ArrowRight, Check } from "lucide-react"
 
 const PROFESIONES = [
   { id: "medicina", icon: Stethoscope, label: "Medicina / Salud" },
   { id: "ingenieria", icon: Cpu, label: "Ingeniería / Tecnología" },
   { id: "academico", icon: GraduationCap, label: "Académico / Investigación" },
   { id: "empresario", icon: Building2, label: "Empresario / Ejecutivo" },
-  { id: "otro", icon: Briefcase, label: "Otro profesional calificado" },
+  { id: "agricultura", icon: Sprout, label: "Agricultura / Sector agrícola" },
+  { id: "servicios", icon: Utensils, label: "Servicios, gastronomía y oficios" },
+  { id: "otro", icon: Briefcase, label: "Otra área" },
+  { id: "sin-empleo", icon: User, label: "Sin empleo actual" },
 ]
 
 const NECESIDADES = [
@@ -53,7 +56,7 @@ export function Qualifier() {
           className="text-center mb-10"
         >
           <p className="text-secondary text-xs sm:text-sm font-medium mb-3 tracking-[0.15em] uppercase">
-            Para profesionales extranjeros
+            Cuéntanos tu situación
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-dark mb-4 tracking-tight">
             Cuéntanos sobre ti
@@ -179,12 +182,12 @@ export function Qualifier() {
               Estás en buenas manos
             </h3>
             <p className="text-sm sm:text-base text-charcoal/50 leading-relaxed max-w-md mx-auto mb-8">
-              Sabemos exactamente lo que un profesional como tú necesita.
-              Cuéntanos tu caso por WhatsApp y te respondemos hoy.
+              Entendemos tu situación. Cuéntanos tu caso por WhatsApp
+              y te respondemos hoy con orientación clara y sin vueltas.
             </p>
 
             <a
-              href={`https://wa.me/56932525267?text=Hola%2C+soy+profesional+del+área+${encodeURIComponent(profesion)}%2C+necesito+${encodeURIComponent(necesidad)}%2C+estoy+en+etapa+${encodeURIComponent(etapa)}.+Me+gustaría+recibir+orientación.`}
+              href={`https://wa.me/56932525267?text=Hola%2C+me+desempeño+en+el+área+${encodeURIComponent(profesion)}%2C+necesito+${encodeURIComponent(necesidad)}%2C+estoy+en+etapa+${encodeURIComponent(etapa)}.+Me+gustaría+recibir+orientación.`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-secondary text-white font-semibold hover:bg-secondary/90 transition-all duration-300 text-center min-h-[44px] shadow-lg shadow-secondary/25 hover:shadow-secondary/40 hover:-translate-y-0.5"

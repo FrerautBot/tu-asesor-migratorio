@@ -136,8 +136,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="text-base sm:text-lg md:text-xl text-white/55 leading-relaxed mb-10 max-w-xl"
           >
-            Gestión migratoria para profesionales extranjeros que valoran
-            su tiempo. Sin abogados caros, sin trámites eternos, sin
+            Gestión migratoria para personas que valoran su tiempo.
+            Sin abogados caros, sin trámites eternos, sin
             soluciones genéricas.
           </motion.p>
 
