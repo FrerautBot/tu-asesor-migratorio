@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Brújula -->
+  <g transform="translate(60, 60)">
+    <circle cx="0" cy="0" r="38" stroke="#0F2440" stroke-width="3" fill="none" />
+    <rect x="-5" y="-24" width="10" height="18" fill="#C17A4E" rx="2" />
+    <polygon points="-15,-12 0,-30 15,-12" fill="#C17A4E" />
+    <text x="0" y="-36" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="11" font-weight="800" fill="#0F2440">N</text>
+    <line x1="6" y1="0" x2="34" y2="0" stroke="#0F2440" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="35" cy="0" r="3" fill="#0F2440" />
+    <line x1="-6" y1="0" x2="-34" y2="0" stroke="#0F2440" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="-35" cy="0" r="3" fill="#0F2440" />
+    <line x1="0" y1="6" x2="0" y2="34" stroke="#0F2440" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="0" cy="35" r="3" fill="#0F2440" />
+    <circle cx="0" cy="0" r="3.5" fill="#C17A4E" />
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(130, 60)">
+    <text x="0" y="-14" font-family="Geist, system-ui, sans-serif" font-size="18" font-weight="400" fill="#0F2440" letter-spacing="2">TU ASESOR</text>
+    <text x="0" y="20" font-family="Geist, system-ui, sans-serif" font-size="34" font-weight="800" fill="#0F2440" letter-spacing="-0.5">MIGRATORIO</text>
+    <line x1="0" y1="-4" x2="230" y2="-4" stroke="#C17A4E" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+</svg>
