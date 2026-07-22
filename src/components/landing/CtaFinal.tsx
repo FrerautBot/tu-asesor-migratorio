@@ -27,7 +27,7 @@ export function CtaFinal() {
           {/* Botones CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
-              href="https://wa.me/569XXXXXXXX"
+              href="https://wa.me/56932525267"
               target="_blank"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-secondary text-white font-semibold hover:bg-secondary/90 transition-colors text-center min-h-[44px] text-sm sm:text-base"
             >
@@ -84,7 +84,7 @@ export function CtaFinal() {
               <input
                 id="telefono"
                 type="tel"
-                placeholder="+56 9 XXXX XXXX"
+                placeholder="+56 9 3252 5267"
                 className="w-full px-4 py-3 rounded-xl border border-primary/15 bg-cream text-sm text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-secondary/50 focus:ring-2 focus:ring-secondary/10 transition-colors"
               />
             </div>

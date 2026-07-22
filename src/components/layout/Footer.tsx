@@ -29,7 +29,7 @@ export function Footer() {
           <div className="space-y-2 text-sm">
             <p>Maule, Chile</p>
             <p>contacto@tuasesormigratorio.cl</p>
-            <p>WhatsApp: +56 9 XXXX XXXX</p>
+            <p>WhatsApp: +56 9 3252 5267</p>
           </div>
         </div>
       </div>

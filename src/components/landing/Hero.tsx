@@ -26,7 +26,7 @@ export function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="https://wa.me/569XXXXXXXX"
+              href="https://wa.me/56932525267"
               target="_blank"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-secondary text-white font-semibold hover:bg-secondary/90 transition-colors text-center min-h-[44px]"
             >
