@@ -117,7 +117,7 @@ export function Hero() {
           >
             Migrar no tiene
             <br />
-            que ser complicado
+            que ser complejo
           </motion.h1>
 
           {/* Subtítulo — enfocado a profesionales */}
