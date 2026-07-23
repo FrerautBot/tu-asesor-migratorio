@@ -42,7 +42,7 @@ export function Equipo() {
                 alt="Marisa Banda Mendoza"
                 width={352}
                 height={352}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[50%_25%]"
                 priority
               />
             </div>
