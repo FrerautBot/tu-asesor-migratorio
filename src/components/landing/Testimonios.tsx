@@ -57,7 +57,6 @@ export function Testimonios() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center text-xs text-charcoal/40 mt-8"
         >
-          Próximamente: capturas reales de WhatsApp como las que ves en tu celular.
         </motion.p>
       </div>
     </section>
