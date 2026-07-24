@@ -43,6 +43,12 @@ export function Slogan() {
 
   const active = inView && armed
 
+  // Posiciones aleatorias para la brújula
+  const brjFromX = (seededRandom(99) - 0.5) * 500
+  const brjFromY = (seededRandom(101) - 0.5) * 350
+  // La brújula gira 360° completo + un poco aleatorio
+  const brjStartRot = -360 + (seededRandom(103) - 0.5) * 60
+
   return (
     <section
       ref={ref}
@@ -52,6 +58,44 @@ export function Slogan() {
       }}
     >
       <div className="max-w-4xl mx-auto px-5 text-center">
+        {/* Brújula — arriba del texto, animada como una letra más + giro completo */}
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: brjFromX,
+            y: brjFromY,
+            rotate: brjStartRot,
+            scale: 0.2,
+          }}
+          animate={
+            active
+              ? {
+                  opacity: 1,
+                  x: 0,
+                  y: 0,
+                  rotate: 0,
+                  scale: 1,
+                }
+              : {}
+          }
+          transition={{
+            duration: 1.4,
+            delay: 0.28, // aparece después de las primeras letras de "Migrar"
+            ease: [0.22, 1, 0.36, 1],
+            opacity: { duration: 0.5 },
+            rotate: { duration: 1.6, ease: [0.22, 1, 0.36, 1] },
+          }}
+          className="flex justify-center mb-2"
+        >
+          <img
+            src="/brujula.png"
+            alt=""
+            className="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 select-none pointer-events-none"
+            aria-hidden="true"
+          />
+        </motion.div>
+
+        {/* Texto animado */}
         <div className="inline-flex flex-wrap justify-center">
           {letters.map(({ char, id, fromX, fromY, fromRotate }) => (
             <motion.span
