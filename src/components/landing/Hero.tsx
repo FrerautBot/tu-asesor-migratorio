@@ -186,8 +186,6 @@ export function Hero() {
         </div>
       </motion.div>
 
-      {/* --- Gradiente de transición inferior --- */}
-      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-cream via-cream/50 to-transparent pointer-events-none" />
     </section>
   )
 }
