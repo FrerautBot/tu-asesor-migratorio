@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "Te guiamos paso a paso con asesoría migratoria basada en experiencia real. No somos abogados, somos gente que ya pasó por esto. Maule, Chile.",
   keywords: ["asesoría migratoria", "inmigrantes Chile", "visa Chile", "residencia Chile", "Maule", "trámites migratorios"],
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/logo-favicon.png",
+    apple: "/logo-favicon.png",
   },
   openGraph: {
     title: "Tu Asesor Migratorio — Asesoría real para inmigrantes",

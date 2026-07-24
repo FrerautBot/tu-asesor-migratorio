@@ -19,7 +19,7 @@ export function Nav() {
       <div className="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
         <Link href="/" className="shrink-0" aria-label="Tu Asesor Migratorio — Inicio">
           <img
-            src="/logo.svg"
+            src="/logo-optimized.png"
             alt="Tu Asesor Migratorio"
             className="h-9 sm:h-10 w-auto"
           />
