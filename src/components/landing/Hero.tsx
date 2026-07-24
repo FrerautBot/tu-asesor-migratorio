@@ -153,7 +153,7 @@ export function Hero() {
               href="#qualifier"
               className="glass-btn inline-flex items-center justify-center px-8 py-4 text-white font-semibold text-center min-h-[44px]"
             >
-              Ver servicios
+              Cuéntanos
             </Link>
           </motion.div>
 
