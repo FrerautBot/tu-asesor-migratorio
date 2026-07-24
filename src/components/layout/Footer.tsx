@@ -17,9 +17,9 @@ export function Footer() {
         <div>
           <p className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Enlaces</p>
           <div className="space-y-1 text-sm">
+            <Link href="#qualifier" className="block py-2 hover:text-white transition-colors">Cuéntanos</Link>
             <Link href="#equipo" className="block py-2 hover:text-white transition-colors">Equipo</Link>
             <Link href="#servicios" className="block py-2 hover:text-white transition-colors">Servicios</Link>
-            <Link href="#faq" className="block py-2 hover:text-white transition-colors">FAQ</Link>
             <Link href="#contacto" className="block py-2 hover:text-white transition-colors">Contacto</Link>
           </div>
         </div>
