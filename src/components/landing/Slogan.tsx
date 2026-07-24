@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useMemo } from "react"
+import { useRef, useMemo, useState, useEffect } from "react"
 import { motion, useInView } from "motion/react"
 
 const FRASE = "Migrar es simple"
@@ -34,6 +34,14 @@ export function Slogan() {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: "-80px" })
   const letters = useMemo(() => buildLetters(), [])
+  const [armed, setArmed] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setArmed(true), 500)
+    return () => clearTimeout(timer)
+  }, [])
+
+  const active = inView && armed
 
   return (
     <section
@@ -56,7 +64,7 @@ export function Slogan() {
                 scale: 0.3,
               }}
               animate={
-                inView
+                active
                   ? {
                       opacity: 1,
                       x: 0,
@@ -85,7 +93,7 @@ export function Slogan() {
         {/* Línea decorativa sutil que aparece después */}
         <motion.div
           initial={{ width: 0, opacity: 0 }}
-          animate={inView ? { width: 120, opacity: 0.5 } : {}}
+          animate={active ? { width: 120, opacity: 0.5 } : {}}
           transition={{ duration: 0.8, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
           className="h-px mx-auto mt-6"
           style={{ backgroundColor: COLOR }}
