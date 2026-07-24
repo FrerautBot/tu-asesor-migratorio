@@ -46,8 +46,8 @@ export function Slogan() {
   // Posiciones aleatorias para la brújula
   const brjFromX = (seededRandom(99) - 0.5) * 500
   const brjFromY = (seededRandom(101) - 0.5) * 350
-  // La brújula gira 360° completo + un poco aleatorio
-  const brjStartRot = -360 + (seededRandom(103) - 0.5) * 60
+  // La brújula gira 360° — -355 a 0 fuerza el giro completo sin ambigüedad
+  const brjStartRot = -355
 
   return (
     <section
@@ -73,7 +73,7 @@ export function Slogan() {
                   opacity: 1,
                   x: 0,
                   y: 0,
-                  rotate: 0,
+                  rotate: [brjStartRot, 0],
                   scale: 1,
                 }
               : {}
