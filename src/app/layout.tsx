@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google"
 import { Nav } from "@/components/layout/Nav"
 import { Footer } from "@/components/layout/Footer"
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton"
@@ -13,6 +13,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+})
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["italic"],
 })
 
 export const metadata: Metadata = {
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-charcoal overflow-x-hidden">
         <Nav />
